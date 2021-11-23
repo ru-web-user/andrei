@@ -5801,6 +5801,19 @@ $(document).ready(function() {
 <script type="text/javascript" src="jquery.downCount.js"></script> 
 <!-- timer  мм.дд.гггг-->
 <script class="source" type="text/javascript">
+function e() {
+	var e = new Date;
+		e.setDate(e.getDate() + 60);
+	
+	var dd = e.getDate();
+	var mm = e.getMonth() + 1;
+	var y = e.getFullYear();
+	
+	var futureFormattedDate = mm + "/" + dd + "/" + y + ' 12:00:00';
+	
+	return futureFormattedDate;
+}
+
 $('.countdown').downCount({
     //date: '03/09/2018 12:00:00',
     date: e(),
