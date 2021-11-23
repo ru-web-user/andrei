@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>С Новым 2018 годом!</title>
+	<meta name="description" content="С Новым 2018 годом!" />
+	<!--[if IE]><script src=//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js></script><![endif]-->
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+
+	<style type="text/css">
+	* {outline: none;}
+body {
+
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+	justify-content: center;
+
+background: #009193; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #004080 0%, #009193 75%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #004080 0%, #009193 75%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #004080 0%, #009193 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004080', endColorstr='#009193',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+		#card {
+			width: 65vh;
+			height: 65vh;
+			max-width: 65vw;
+			max-height: 65vw;
+			cursor: pointer;
+		}
+		.front {
+			background: url('i/front.png') no-repeat;
+			background-size: cover;
+			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+		}
+		.back {
+			background: url('i/back.png') no-repeat;
+			background-size: cover;
+			box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.5);
+		}
+
+#card:hover .front {
+box-shadow: 0 0 100px 10px rgba(255, 255, 255, 0.5);
+}
+#card:hover .back {
+box-shadow: 0 0 100px 10px rgba(236, 103, 7, 0.9);
+box-shadow: 0 0 100px 10px rgba(255, 255, 255, 0.5);
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+.winter-is-coming, .snow {
+  z-index: 100;
+  pointer-events: none;
+}
+
+.winter-is-coming {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  000background: #333;
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: falling linear infinite both;
+          animation: falling linear infinite both;
+  -webkit-transform: translate3D(0, -100%, 0);
+          transform: translate3D(0, -100%, 0);
+}
+.snow--near {
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  000background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+  background-image: url('i/snow-large-075d267ecbc42e3564c8ed43516dd557.png');
+  background-size: contain;
+}
+.snow--near + .snow--alt {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+.snow--mid {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  000background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+  background-image: url('i/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png');
+  background-size: contain;
+}
+.snow--mid + .snow--alt {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+.snow--far {
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  000background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+  background-image: url('i/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png');
+  background-size: contain;
+}
+.snow--far + .snow--alt {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+            transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+            transform: translate3D(7.5%, 100%, 0);
+  }
+}
+
+@keyframes falling {
+  0% {
+    -webkit-transform: translate3D(-7.5%, -100%, 0);
+            transform: translate3D(-7.5%, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3D(7.5%, 100%, 0);
+            transform: translate3D(7.5%, 100%, 0);
+  }
+}
+.ie {display: none;}
+	</style>
+<!--[if lt IE 11]>
+<style>
+body {margin: auto;}
+.ie {display: block;}
+.wrapper {display: none;}
+body {background: #ffffff; filter: none;}
+</style>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+
+<div id="card">
+	<div class="front"></div>
+	<div class="back"></div>
+</div>
+
+<div class="winter-is-coming">
+  
+  <div class="snow snow--near"></div>
+  <div class="snow snow--near snow--alt"></div>
+  
+  <div class="snow snow--mid"></div>
+  <div class="snow snow--mid snow--alt"></div>
+  
+  <div class="snow snow--far"></div>
+  <div class="snow snow--far snow--alt"></div>
+</div>
+
+</div>
+<script>
+$("#card").flip({
+	axis: 'y',
+	trigger: 'click',
+	reverse: true,
+	speed: 750
+});	
+</script>
+<h1 class="ie">Браузер не поддерживается</h1>
+<p class="ie">Вы используете браузер, который не поддерживается сайтом.</p>
+<p class="ie">Чтобы все работало корректно, загрузите и установите один из современных браузеров:</p>
+<ul class="ie">
+<li><a href="https://www.google.com/chrome/" target="_blank" rel="nofollow">Chrome</a></li>
+<li><a href="https://www.mozilla.org/firefox/" target="_blank" rel="nofollow">Firefox</a></li>
+<li><a href="https://www.opera.com/" target="_blank" rel="nofollow">Opera</a></li>
+</ul>
+</body>
+</html>
