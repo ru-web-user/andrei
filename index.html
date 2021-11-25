@@ -91,11 +91,12 @@ header {
 			Я&nbsp;начинающий front-end разработчик.
 			</div>
 			<a class="btn btn-outline-success btn-lg w-auto my-3" href="#about" role="button" data-aos="fade-down">Подробнее</a>
+			</div>
 		</div>
 	</div>
 </header>
 
-<nav id="navbar" class="navbar navbar-dark bg-dark sticky-top navbar-expand-md">
+<nav id="navbar" class="navbar navbar-dark bg-dark navbar-expand-md sticky-top">
 	<div class="container">
 		<a class="navbar-brand" href="#header"><i class="bi bi-house-door-fill"></i></a>
 		<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -112,14 +113,14 @@ header {
 <section id="about" class="py-5">
 	<div class="container">
 		<div class="h2 mb-5 text-center" data-aos="fade-down">Обо мне</div>
-			<div class="row row-cols-1 row-cols-md-2 g-5">
-				<div class="col text-center" data-aos="fade-left">
+			<div class="row">
+				<div class="col-12 col-md-6 text-center" data-aos="fade-left">
 					<img src="https://ru-web-user.github.io/andrei/589777651.jpeg" alt="Андрей" class="img-fluid rounded-circle mw-25 shadow" style="
 clip-path000: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); max-width: 200px;" />
 					<div class="h3 mt-5 mb-3">Кто я?</div>
 					<div>Я начинающий front-end разработчик.<br />Увлекаюсь изучением HTML, CSS и JavaScript. Закончил 17 интерактивных онлайн-курсов по веб-программированию на HTML Academy.</div>
 				</div>
-				<div class="col" data-aos="fade-right" data-aos-id="progress">
+				<div class="col-12 col-md-6" data-aos="fade-right" data-aos-id="progress">
 					<div class="progress my-3">
 						<div class="progress-bar bg-success " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML5</div>
 						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-opacity-50" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -227,13 +228,19 @@ $("[href^='#']:not([data-bs-toggle])").click(function(e) {
 	}, 500);
 });
 
-AOS.init({once: true});
+AOS.init({once: true, disable: "mobile"});
+
+  if ((typeof AOS !== 'undefined')) {
 
 $(".progress-bar-striped").css( "width", "0%");
 $(".progress-bar-striped").find("span").text("0%");
+  }
 
 
 document.addEventListener("aos:in:progress", ({ detail }) => {
+
+
+
 	var duration = 250;
 //$(".progress-bar-striped").css( "width", "0%");
 	$('.progress').each(function (i) {
