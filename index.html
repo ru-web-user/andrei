@@ -36,7 +36,7 @@ header {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.35)!important;
 }
  .progress {
-    height: 30px;
+    height: 25px;
 }
  .card-cover {
 	background-repeat: no-repeat;
@@ -79,9 +79,20 @@ header {
  .card:hover:after, .card:hover .card-title{
 	opacity: 0;
 }
+.py-5 {
+	padding-top: 5rem!important;
+	padding-bottom: 5rem!important;
+}
+@media (min-width: 768px) {
+	.py-md-5 {
+		padding-top: 5rem!important;
+		padding-bottom: 5rem!important;
+	}
+}
+@media (prefers-reduced-motion) {}
 </style>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="80">
 <header id="header" class="min-vh-100 d-flex align-items-center justify-content-center text-white bg-dark text-center">
 	<div class="container">
 		<div class="row">
@@ -110,17 +121,17 @@ header {
 	</div>
 </nav>
 
-<section id="about" class="py-5">
+<section id="about" class="py-5 py-md-5">
 	<div class="container">
 		<div class="h2 mb-5 text-center" data-aos="fade-down">Обо мне</div>
 			<div class="row">
 				<div class="col-12 col-md-6 text-center" data-aos="fade-left">
-					<img src="https://ru-web-user.github.io/andrei/589777651.jpeg" alt="Андрей" class="img-fluid rounded-circle mw-25 shadow" style="
-clip-path000: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); max-width: 200px;" />
+					<img src="https://ru-web-user.github.io/andrei/589777651.jpeg" alt="Андрей" class="img-fluid rounded-circle mw-25 shadow" style="max-width: 200px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Привет!" />
 					<div class="h3 mt-5 mb-3">Кто я?</div>
 					<div>Я начинающий front-end разработчик.<br />Увлекаюсь изучением HTML, CSS и JavaScript. Закончил 17 интерактивных онлайн-курсов по веб-программированию на HTML Academy.</div>
 				</div>
-				<div class="col-12 col-md-6" data-aos="fade-right" data-aos-id="progress">
+				<div class="col-12 col-md-6 progress2" data-aos="fade-right" data-aos-id="progress">
+					<div class="h3 mt-5 mb-3 text-center">Мои навыки</div>
 					<div class="progress my-3">
 						<div class="progress-bar bg-success " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML5</div>
 						<div class="progress-bar progress-bar-striped progress-bar-animated bg-success bg-opacity-50" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -161,7 +172,7 @@ clip-path000: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6%
 		</div>
 </section>
 
-<section class="bg-secondary bg-opacity-10 py-5" id="portfolio">
+<section class="bg-secondary bg-opacity-10 py-5 py-md-5" id="portfolio">
 	<div class="container">
 		<div class="h2 mb-5 text-center" data-aos="fade-down">Проекты</div>
 		<ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist" data-aos="fade-up">
@@ -173,7 +184,7 @@ clip-path000: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6%
 			<div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
 				<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 align-items-stretch gy-4">
 					<div class="col">
-						<div class="card mx-50 h-100 overflow-hidden card-cover text-white rounded-5000 shadow-lg border-0" style="background-image: url('');">
+						<div class="card h-100 overflow-hidden card-cover text-white shadow-lg border-0" style="background-image: url('');">
 							<div class="card-body content mt-5 mb-3 pt-5" style="">
 								<a class="card-title h1 fw-bold stretched-link text-decoration-none link-light" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Фиалки<br />и фуксии</a>
 							</div>
@@ -210,7 +221,38 @@ clip-path000: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6%
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div><img src="https://www.site-shot.com/cached_image/4E7Y0klwEeyYRQJCrBEAAg" class="img-fluid" /></div>
-			<div class="modal-body">Контент менеджмент сайта: размещение текста и фото/видео материалов.</div>
+			<div class="modal-body">
+
+
+
+
+
+			<div class="">
+<div class=" d-flex align-items-start">
+<div class="me-2"><i class="bi bi-tag-fill"></i></div>
+<span class="badge bg-primary">Primary</span>
+<span class="badge bg-secondary">Secondary</span>
+<span class="badge bg-success">Success</span>
+<span class="badge bg-danger">Danger</span>
+</div>
+<div class=" d-flex align-items-start">
+<div class="me-2"><i class="bi bi-tag-fill"></i></div>
+<span class="badge bg-warning text-dark">Warning</span>
+<span class="badge bg-info text-dark">Info</span>
+<span class="badge bg-light text-dark">Light</span>
+<span class="badge bg-dark">Dark</span>
+</div>
+<div class=" d-flex align-items-start">
+<div class="me-2"><i class="bi bi-link-45deg"></i></div>
+<div><a href="#">asdkj fhaodf</a></div>
+</div>
+			</div>
+			Контент менеджмент сайта: размещение текста и фото/видео материалов.
+			
+			
+			
+
+			</div>
 		</div>
 	</div>
 </div>
@@ -224,26 +266,16 @@ $("[href^='#']:not([data-bs-toggle])").click(function(e) {
 	e.preventDefault();
 	id = $(this).attr("href");
 	$("html, body").animate({
-		scrollTop: $(id).offset().top
+		scrollTop: $(id).offset().top - 50
 	}, 500);
 });
 
-AOS.init({once: true, disable: "mobile"});
-
-  if ((typeof AOS !== 'undefined')) {
-
-$(".progress-bar-striped").css( "width", "0%");
-$(".progress-bar-striped").find("span").text("0%");
-  }
-
+AOS.init({once: true});
 
 document.addEventListener("aos:in:progress", ({ detail }) => {
-
-
-
-	var duration = 250;
+	var duration = 500;
 //$(".progress-bar-striped").css( "width", "0%");
-	$('.progress').each(function (i) {
+	$(".progress").each(function (i) {
 		var bar = $(this).children(".progress-bar-striped");	
 		bar.css("width", "0%").delay( i*(duration/2) ).animate({
 			"width":  75*bar.attr("aria-valuenow")/100 + '%'
@@ -260,7 +292,6 @@ document.addEventListener("aos:in:progress", ({ detail }) => {
 			}
 		});
 	});
-
 });
 </script>
 </body>
