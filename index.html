@@ -7,6 +7,7 @@
 	<meta name="robots" content="noindex, nofollow, noarchive" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Hello, world!</title>
+	<link rel="icon" href="https://i.hh.ru/favicons/hh.ico" />
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -39,8 +40,8 @@ header .text {
     height: 25px;
 }
 .card {
-	min-height: 220px !important;
-	max-height: 220px !important;
+	min-height: 250px !important;
+	max-height: 250px !important;
 }
 .card-cover {
 	background-repeat: no-repeat;
@@ -105,6 +106,10 @@ header .text {
 		padding-bottom: 5rem!important;
 	}
 }
+.btn:focus, button:focus, .navbar-toggler:focus {
+	outline: 0 !important;
+	box-shadow: none !important;
+}
 @media (prefers-reduced-motion) {}
 </style>
 </head>
@@ -144,7 +149,7 @@ header .text {
 				<div class="col-12 col-md-6 text-center" data-aos="fade-up">
 					<img src="img/589777651.jpeg" alt="Андрей" class="img-fluid rounded-circle mw-25 shadow" style="max-width: 200px;" data-bs-toggle="tooltip" data-bs-placement="top" title="Привет!" />
 					<div class="h3 mt-5 mb-3">Кто я?</div>
-					<div>Я начинающий front-end разработчик.<br />Увлекаюсь изучением HTML, CSS и JavaScript. Закончил 17 интерактивных онлайн-курсов по веб-программированию на HTML Academy.</div>
+					<div>Я&nbsp;начинающий front-end разработчик.<br />Увлекаюсь изучением HTML, CSS (Bootstrap) и&nbsp;JavaScript/jQuery. Закончил 17&nbsp;интерактивных онлайн-курсов по&nbsp;веб-программированию на&nbsp;HTML&nbsp;Academy.</div>
 				</div>
 				<div class="col-12 col-md-6 progress2" data-aos="fade-up" data-aos-id="progress">
 					<div class="h3 mt-5 mb-3 text-center">Мои навыки</div>
@@ -203,7 +208,7 @@ header .text {
 					<div class="col all js-css content">
 						<div class="card h-100 overflow-hidden card-cover text-white shadow-lg border-0">
 							<div class="card-body content mt-5 mb-3 pt-5">
-								<a class="card-title h1 fw-bold stretched-link text-decoration-none link-light" data-bs-toggle="modal" href="#modal-1" role="button">Начинающий<br />front-end</a>
+								<a class="card-title h1 fw-bold stretched-link text-decoration-none link-light" data-bs-toggle="modal" href="#modal-1" role="button">Junior<br />front-end</a>
 							</div>
 						</div>
 					</div>
@@ -250,54 +255,52 @@ header .text {
 	</div>
 </footer>
 
-<div class="modal fade" id="modal-1" aria-hidden="true" aria-labelledby="modalLabel-1" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen -md-down"><div class="modal-content">
+<div class="modal fade" id="modal-1" aria-hidden="true" aria-labelledby="modalLabel-1" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"><div class="modal-content">
 	<div class="modal-header"><div class="modal-title h5" id="modalLabel-1">Начинающий front-end</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
-	<!--<div><img src="img/andrei.png" class="img-fluid" alt="" /></div>
-	<div class="modal-body">11111111111111</div>-->
-	<div class="h-100"><iframe src="https://ru-web-user.github.io/andrei/" width="100%" class="h-100" scrolling="yes"></iframe></div>
+	<div><img src="img/andrei.png" class="img-fluid" alt="" /></div>
+	<div class="modal-body">Создание дизайн-макета и верстка лендинга (Bootstrap 5, jQuery).</div>
 	<div class="modal-footer">
-		<a href="https://ru-web-user.github.io/andrei/" target="_blank" class="btn btn-success w-100"><i class="bi bi-link-45deg"></i> andrei</a>
+		<a href="https://ru-web-user.github.io/andrei/" target="_blank" class="btn btn-success w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Посмотреть</a>
 	</div>
 </div></div></div>
 
-<div class="modal fade" id="modal-2" aria-hidden="true" aria-labelledby="modalLabel-2" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen -md-down"><div class="modal-content">
+<div class="modal fade" id="modal-2" aria-hidden="true" aria-labelledby="modalLabel-2" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"><div class="modal-content">
 	<div class="modal-header"><div class="modal-title h5" id="modalLabel-2">Фиалки и фуксии</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
-	
-	<div class="modal-bod">
+	<div><img src="img/fialki.png" class="img-fluid" alt="" /></div>
+	<div class="modal-body">
 		<!--<div class=" d-flex align-items-start"><div class="me-2"><i class="bi bi-tag-fill"></i></div><span class="badge bg-primary">Primary</span><span class="badge bg-secondary">Secondary</span><span class="badge bg-success">Success</span><span class="badge bg-danger">Danger</span></div>-->
-		
-		<div class="h-100"><iframe src="http://www.fialki.net/" width="100%" class="h-100" scrolling="yes"></iframe></div>
+		Контент менеджмент сайта: размещение и редактирование текстов, фото/видео материалов.
 	</div>
 	<div class="modal-footer">
-		<a href="http://www.fialki.net/" target="_blank" class="btn btn-success w-100"><i class="bi bi-link-45deg"></i> fialki.net</a>
+		<a href="http://www.fialki.net/" target="_blank" class="btn btn-success w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Посмотреть</a>
 	</div>
 </div></div></div>
 
 <div class="modal fade" id="modal-3" aria-hidden="true" aria-labelledby="modalLabel-3" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"><div class="modal-content">
 	<div class="modal-header"><div class="modal-title h5" id="modalLabel-3">E-mail шаблон</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
-	<div><img src="img/email-otp.png" class="img-fluid" alt="" /></div>
-	<div class="modal-body">11111111111111</div>
+	<!--<div><img src="img/email-otp.png" class="img-fluid" alt="" /></div>
+	<div class="modal-body">Табличная верстка e-mail (для сервисов рассылки) по макету из Figma.</div>-->
+	<div class="h-100"><iframe src="https://ru-web-user.github.io/andrei/email-otp.html" width="100%" class="h-100" scrolling="yes" style="min-height: 500px;"></iframe></div>
 	<div class="modal-footer">
-		<a href="https://ru-web-user.github.io/andrei/email-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-link-45deg"></i> email-otp</a>
+		<a href="https://ru-web-user.github.io/andrei/email-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Посмотреть</a>
 	</div>
 </div></div></div>
 
-<div class="modal fade" id="modal-4" aria-hidden="true" aria-labelledby="modalLabel-4" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen -md-down"><div class="modal-content">
+<div class="modal fade" id="modal-4" aria-hidden="true" aria-labelledby="modalLabel-4" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"><div class="modal-content">
 	<div class="modal-header"><div class="modal-title h5" id="modalLabel-4">Открытка к Новому Году</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
-	<!--<div><img src="img/ny2018-otp.png" class="img-fluid" alt="" /></div>
-	<div class="modal-body">11111111111111</div>-->
-	<div class="h-100"><iframe src="https://ru-web-user.github.io/andrei/ny2018-otp.html" width="100%" class="h-100" scrolling="yes"></iframe></div>
+	<div><img src="img/ny2018-otp.png" class="img-fluid" alt="" /></div>
+	<div class="modal-body">Верстка новогодней открытки по макету из Figma.</div>
 	<div class="modal-footer">
-		<a href="https://ru-web-user.github.io/andrei/ny2018-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-link-45deg"></i> ny2018-otp</a>
+		<a href="https://ru-web-user.github.io/andrei/ny2018-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Посмотреть</a>
 	</div>
 </div></div></div>
 
 <div class="modal fade" id="modal-5" aria-hidden="true" aria-labelledby="modalLabel-5" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down"><div class="modal-content">
 	<div class="modal-header"><div class="modal-title h5" id="modalLabel-5">Закрытая распродажа</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
 	<div><img src="img/euroset-otp.png" class="img-fluid" alt="" /></div>
-	<div class="modal-body">11111111111111</div>
+	<div class="modal-body">Верстка лендинга (Bootstrap 3, jQuery) по макету из Figma.</div>
 	<div class="modal-footer">
-		<a href="https://ru-web-user.github.io/andrei/euroset-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-link-45deg"></i> euroset-otp</a>
+		<a href="https://ru-web-user.github.io/andrei/euroset-otp.html" target="_blank" class="btn btn-success w-100"><i class="bi bi-box-arrow-up-right me-1"></i> Посмотреть</a>
 	</div>
 </div></div></div>
 
